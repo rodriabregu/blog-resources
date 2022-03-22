@@ -1,12 +1,13 @@
 {
   "name": "blog-resources",
-	"version": "0.0.1",
-	"description": "Blog with resources for developers.",
+  "version": "0.0.2",
+  "description": "Blog with resources for developers.",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "graphql": "^16.3.0",
@@ -24,6 +25,8 @@
     "@types/node": "17.0.4",
     "@types/react": "17.0.38",
     "autoprefixer": "^10.4.0",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.1",
