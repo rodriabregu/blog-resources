@@ -17,9 +17,15 @@ const CategoryPost = ({ posts }: any) => {
     <div className="container px-10 mx-auto mb-8">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
         <div className="col-span-1 lg:col-span-8">
-          {posts.map((post: any, index: number) => (
-            <PostCard key={index} post={post} />
-          ))}
+          {posts.length ? (
+            posts.map((post: any, index: number) => (
+              <PostCard key={index} post={post} />
+            ))
+          ) : (
+            <div className="text-3xl text-center text-white">
+              <h1>No hay post en esta categoría todavía.</h1>
+            </div>
+          )}
         </div>
         <div className="col-span-1 lg:col-span-4">
           <div className="relative top-8 lg:sticky">
