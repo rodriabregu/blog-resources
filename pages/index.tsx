@@ -16,12 +16,12 @@ const Home: NextPage = ({ posts }: any) => {
             <PostCard post={post} key={index} />
           ))}
         </article>
-        <div className="col-span-1 lg:col-span-4">
-          <div className="relative top-8 lg:sticky">
+        <section className="col-span-1 lg:col-span-4">
+          <article className="relative top-8 lg:sticky">
             <PostWidget categories={''} slug={''} />
             <Categories />
-          </div>
-        </div>
+          </article>
+        </section>
       </main>
     </div>
   )
