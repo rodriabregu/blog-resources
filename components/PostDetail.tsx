@@ -1,5 +1,4 @@
 import moment from 'moment'
-import Image from 'next/image'
 import React from 'react'
 import { MdOutlineDateRange } from 'react-icons/md'
 import { getContentFragment } from '../utils/getContentFragment'

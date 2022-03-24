@@ -4,7 +4,7 @@ export const getContentFragment = (
   index: any,
   text: any,
   obj: any,
-  type: any
+  type?: any
 ) => {
   let modifiedText = text
   if (obj) {

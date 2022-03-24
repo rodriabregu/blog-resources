@@ -4,18 +4,18 @@ import { submitComment } from '../services'
 const CommentsForm = ({ slug }: any) => {
   const [error, setError] = useState(false)
   const [showSuccess, setShowSuccess] = useState(false)
-  const commentEl = useRef()
-  const nameEl = useRef()
-  const emailEl = useRef()
-  const storeDataEl = useRef()
+  const commentEl: any = useRef()
+  const nameEl: any = useRef()
+  const emailEl: any = useRef()
+  const storeDataEl: any = useRef()
 
   const handleCommentSubmit = (e: any) => {
     e.preventDefault()
     setError(false)
-    const { value: comment } = commentEl.current
-    const { value: name } = nameEl.current
-    const { value: email } = emailEl.current
-    const { checked: storeData } = storeDataEl.current
+    const { value: comment }: any = commentEl.current
+    const { value: name }: any = nameEl.current
+    const { value: email }: any = emailEl.current
+    const { checked: storeData }: any = storeDataEl.current
 
     if (!comment || !name || !email) return setError(true)
 
