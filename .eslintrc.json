@@ -5,17 +5,13 @@
     "es6": true,
     "node": true
   },
-  "parser": "babel-eslint",
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
-    "next/core-web-vitals",
-    // "plugin:react-hooks/recommended",
-    // always put prettier at last
-    // "prettier"
+    "next/core-web-vitals"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -23,7 +19,8 @@
   },
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true // enable linting for jsx files
+      "jsx": true, // enable linting for jsx files
+      "tsx": true // enable linting for jsx files
     },
     "ecmaVersion": 11,
     "sourceType": "module"

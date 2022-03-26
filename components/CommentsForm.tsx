@@ -34,7 +34,7 @@ const CommentsForm = ({ slug }: any) => {
       localStorage.removeItem('email')
     }
 
-    submitComment(commentObj).then((res: any) => {
+    submitComment(commentObj).then(() => {
       setShowSuccess(true)
       setTimeout(() => {
         setShowSuccess(false)
